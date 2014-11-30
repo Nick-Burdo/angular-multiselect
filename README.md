@@ -8,8 +8,8 @@ itMultiSelect template based by Bootstrap-3 styles.
 
 itMultiSelect has four control:
 
-* Button to toggle the drop-down list, the text of which is set attribute `placeholder`
-* Input for open the list and search (filter) it
+* Button to toggle the drop-down list, the text of which is set by attribute `placeholder`
+* Input for open the drop-down list and search (filter) it
 * Button for refresh search input
 * Button marked by caret to toggle  the drop-down list
 
@@ -27,7 +27,7 @@ itMultiSelect has four control:
 
 ####`it-source`
 
-Array to build the list. Must have the following structure:
+Array to build the selection drop-down list. Must have the following structure:
 
 ```
 $scope.countries = [
