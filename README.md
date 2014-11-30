@@ -1,27 +1,3 @@
-#header H1
-
-Paragraph
-
-Next paragraph
-
-## header H2
-
-###header H3
-
-```
-// code block
-<div class="box"></div>
-```
-
-[link](http://github.com)
-
-* list item
-* next list item
-
-code online `<script src="angular.js"></script>` online code
-
-*Note wrapped on stars*
-
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
