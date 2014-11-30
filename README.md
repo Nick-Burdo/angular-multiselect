@@ -36,7 +36,7 @@ $scope.countries = [
 
 ####`it-placeholder`
 
-Text of firs button. May vary in accordance with the selection results.
+Text of first button. May vary in accordance with the selection results.
 
 ```
 $scope.placeholder = function() {
@@ -52,5 +52,5 @@ Search input placeholder
 
 Result model. Is an object containing the selected items: "id" as the key and the "title" as a value.
 
-*Note! The result may contain items whose value is false. This happens when the item is selected, and then selected.
+*Note! The result may contain items whose value is false. This happens when the item is selected, and then unselected.
 Therefore, the result requires filtering.*
