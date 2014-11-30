@@ -1,7 +1,9 @@
 #itMultiSelect the directive
 
-The directive creates a group of HTML elements for multiple choice like <SELECT multiple>.
+The directive creates a group of HTML elements for multiple choice like &lt;SELECT multiple&gt;.
+
 Elements of choice based on the checkboxes.
+
 itMultiSelect template based by Bootstrap-3 styles.
 
 itMultiSelect has four control:
