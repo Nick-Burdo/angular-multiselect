@@ -79,7 +79,6 @@ angular.module('myApp.view1', ['ngRoute'])
         /* multi selector with directive */
 
         //initial value
-        //$scope.result =  {"21":"Албания","23":"Американское Самоа"}
         $scope.imsResult =  {"21":"Албания","23":"Американское Самоа"}
         $scope.imsPlaceholder = function() {
             var count = 0;

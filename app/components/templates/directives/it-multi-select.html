@@ -30,6 +30,7 @@
                     <label>
                         <input type="checkbox"
                                ng-model="$parent.result[item.id]"
+                               ng-change="filterResult()"
                                ng-true-value="'{{item.title}}'">
                         <span>{{item.title}}</span>
                     </label>

@@ -1,7 +1,8 @@
 #itMultiSelect the directive
 
-The directive creates a group of HTML elements for multiple choice like <SELECT multiple>
-Elements of choice based on the checkboxes
+The directive creates a group of HTML elements for multiple choice like <SELECT multiple>.
+Elements of choice based on the checkboxes.
+itMultiSelect template based by Bootstrap-3 styles.
 
 itMultiSelect has four control:
 
@@ -52,11 +53,10 @@ Search input placeholder
 
 Result model. Is an object containing the selected items: "id" as the key and the "title" as a value.
 
-*Note! The result may contain items whose value is false. This happens when the item is selected, and then unselected.
-Therefore, the result requires filtering.*
-
 ###Source
 
 Directive code is located in the file `app/directives.js`
 
 Directive template is located in the file `app/components/directives/it-multi-select.html`
+
+Directive template CSS is located in the file `app/app.css`

@@ -31,7 +31,7 @@ angular.module('directives', []).
             }
         }
     }).
-    directive('itMultiSelect', function () {
+    directive('itMultiSelect', function ($timeout) {
         return {
             restrict: "E",
             templateUrl: 'components/templates/directives/it-multi-select.html',
@@ -67,6 +67,16 @@ angular.module('directives', []).
                 };
                 $scope.refresh = function () {
                     $scope.filter = '';
+                };
+
+                $scope.filterResult = function() {
+                    $timeout(function() {
+                        angular.forEach($scope.result, function(val, key){
+                            if(!val) {
+                                delete $scope.result[key];
+                            }
+                        });
+                    },0);
                 };
             }
         };
