@@ -54,3 +54,9 @@ Result model. Is an object containing the selected items: "id" as the key and th
 
 *Note! The result may contain items whose value is false. This happens when the item is selected, and then unselected.
 Therefore, the result requires filtering.*
+
+###Source
+
+Directive code is located in the file `add/directives.js`
+
+Directive template is located in the file `add/components/directives/it-multi-select.html`
