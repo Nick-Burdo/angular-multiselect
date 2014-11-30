@@ -57,6 +57,6 @@ Therefore, the result requires filtering.*
 
 ###Source
 
-Directive code is located in the file `add/directives.js`
+Directive code is located in the file `app/directives.js`
 
-Directive template is located in the file `add/components/directives/it-multi-select.html`
+Directive template is located in the file `app/components/directives/it-multi-select.html`
