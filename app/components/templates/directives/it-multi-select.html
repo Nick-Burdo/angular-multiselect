@@ -1,0 +1,40 @@
+<div class="dropdown ">
+    <div class="input-group">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button" ng-click="toggle()">
+                <span>{{placeholder}}</span>
+            </button>
+        </span>
+        <input type="search" class="form-control" placeholder="{{searchPlaceholder}}"
+               ng-click="opener()"
+               ng-model="filter">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button"
+                    ng-hide="filter == '';"
+                    ng-click="refresh()">
+                <span class="glyphicon glyphicon-refresh"></span>
+            </button>
+            </button>
+            <button class="btn btn-default" type="button" ng-click="toggle()">
+                <span class="caret"></span></button>
+            </button>
+        </span>
+    </div>
+    <!-- /input-group -->
+
+    <div class="dropdown-menu it-selector-list" ng-show="listShow">
+        <ul>
+            <li ng-repeat="item in items | filter: filter"
+                ng-class="{active: result[item.id]}">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"
+                               ng-model="$parent.result[item.id]"
+                               ng-true-value="'{{item.title}}'">
+                        <span>{{item.title}}</span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

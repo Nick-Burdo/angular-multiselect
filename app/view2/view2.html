@@ -1,5 +1,21 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title">View 2</h2>
+    </div>
+    <div class="panel-body">
+        <p>
+            <button type="button" class="btn btn-primary" ng-click="timerDialog()">Open message window</button>
+        </p>
+
+        <h3>Timer: <span class="label label-success">{{timerCount}}</span></h3>
+
+        <pop-up-dialog></pop-up-dialog>
+
+
+        <p>This is the partial for view 2.</p>
+        <p>
+            Showing of 'interpolate' filter:
+            {{ 'Current version is v%VERSION%.' | interpolate }}
+        </p>
+    </div>
+</div>

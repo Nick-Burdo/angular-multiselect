@@ -28,3 +28,57 @@
   content: "";
   padding: 0;
 }
+
+/*  modal */
+.modal {
+    background: rgba(0,0,0,0.6);
+    display: block;
+}
+.modal-dialog.small-modal-dialog {
+    width: 300px;
+}
+
+/*  itMultiSelect   */
+.it-selector-list {
+    right: 0;
+    max-height: 315px;
+    overflow: auto;
+    display: block;
+}
+.it-selector-list ul {
+    list-style: none;
+    padding: 0;
+}
+.it-selector-list li {
+    padding: 0 15px;
+}
+.it-selector-list label {
+    display: block;
+}
+.it-selector-list li:hover,
+.it-selector-list li:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #ddd;
+}
+.it-selector-list .active,
+.it-selector-list .active:hover,
+.it-selector-list .active:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #337ab7;
+    outline: 0;
+}
+.it-selector-list .disabled,
+.it-selector-list .disabled:hover,
+.it-selector-list .disabled:focus {
+    color: #777;
+}
+.it-selector-list .disabled:hover,
+.it-selector-list .disabled:focus {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}

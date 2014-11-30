@@ -1,1 +1,85 @@
-<p>This is the partial for view 1.</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title">View 1</h2>
+    </div>
+    <div class="panel-body">
+        <p>This is the partial for view 1.</p>
+
+        <div ng-controller="helloCtrl">
+            <h3>Hello directive</h3>
+            <label>That's your name? </label>
+            <input type="text" data-ng-model="name">
+            <span data-my-hello="name" data-my-hello-prefix="Hi"></span>
+        </div>
+
+        <div>
+            <form name="multiSelectForm" ng-controller="itMultiSelectCtrl">
+            <h3>itMultiSelect directive</h3>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>directions: <span>{{directions}}</span></p>
+                    <p>Направления: <span>{{directionsView()}}</span></p>
+
+                    <div class="dropdown ">
+                        <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" ng-click="itMultiSelectToggle()">
+                                <span>{{itMultiSelectPlaceholder()}}</span>
+                            </button>
+                        </span>
+                            <input type="search" class="form-control" placeholder="Поиск"
+                                    ng-click="itMultiSelectOpener()"
+                                    ng-model="itMultiSelectFilter">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"
+                                    ng-hide="itMultiSelectFilter == '';"
+                                    ng-click="itMultiSelectRefresh()">
+                                <span class="glyphicon glyphicon-refresh"></span>
+                            </button>
+                            </button>
+                            <button class="btn btn-default" type="button" ng-click="itMultiSelectToggle()">
+                                <span class="caret"></span></button>
+                            </button>
+                        </span>
+                        </div><!-- /input-group -->
+
+                        <div class="dropdown-menu it-selector-list" ng-show="itMultiSelectShow">
+                            <ul>
+                                <li ng-repeat="country in countries | filter: itMultiSelectFilter"
+                                    ng-class="{active: directions[country.id]}">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"
+                                                   ng-model="$parent.directions[country.id]"
+                                                   ng-true-value="'{{country.title}}'">
+                                            <span>{{country.title}}</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <p>
+                        Result:
+                        <span>{{imsResult}}</span>
+                    </p>
+                    <p>
+                        Результат:
+                        <span>{{resultView()}}</span>
+                    </p>
+
+                    <it-multi-select
+                            it-source="{{countries}}"
+                            it-placeholder="{{imsPlaceholder()}}"
+                            it-search-placeholder="Поиск по названию"
+                            it-model="imsResult">
+                    </it-multi-select>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            </form>
+        </div>
+    </div>
+</div>
