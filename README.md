@@ -1,4 +1,4 @@
-#header H1
+#itMultiSelect the directive
 
 Paragraph
 
